@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run script file
       run: |
-         chmod +x shellscripts/E2E_TestCases.sh
-         shellscripts/E2E_TestCases.sh
+         chmod +x ${GITHUB_WORKSPACE}/.github/E2E_TestCases.sh
+         ${GITHUB_WORKSPACE}/.github/E2E_TestCases.sh
       shell: bash
