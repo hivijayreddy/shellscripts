@@ -6,7 +6,7 @@ PRODUCTION=https://dataplex.googleapis.com/
 AUTOPUSH=https://autopush-dataplex.sandbox.googleapis.com/
 TEST_ENVIRONMENT=$AUTOPUSH
 TEST_SERVICE="${TEST_ENVIRONMENT}/v1"
-token=$(gcloud auth print-access-token)
+#token=$(gcloud auth print-access-token)
 Content_Type="Content-Type: application/json"
 
 #Project Name
@@ -164,6 +164,8 @@ echo "Executing on ${TEST_ENVIRONMENT}" ;
 gcloud config set api_endpoint_overrides/dataplex ${TEST_ENVIRONMENT} ;
 
 echo "---------------------------------------------------------------------------------------------------------"
+#login
+gcloud config set account vijayabh@google.com
 #Create a lake
 #echo "****** TC01-Create an environment, successfully. ******"
 gcloud alpha dataplex lakes create "${LAKENAME}" --project="${TEST_PROJECT}" --location="${TEST_LOCATION}" ;
