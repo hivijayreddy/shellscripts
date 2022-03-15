@@ -3,9 +3,9 @@
 #login
 gcloud auth list
 gcloud config set account 'vijayabh@google.com'
-gcloud init
 gcloud config configurations activate default
-gcloud auth login --no-launch-browser
+gcloud projects list
+gcloud config set project dataplex-cdf
 
 #Environment
 STAGING=https://staging-dataplex.sandbox.googleapis.com/
