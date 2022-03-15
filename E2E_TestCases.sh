@@ -165,7 +165,7 @@ gcloud config set api_endpoint_overrides/dataplex ${TEST_ENVIRONMENT} ;
 
 echo "---------------------------------------------------------------------------------------------------------"
 #login
-gcloud auth login
+gcloud auth login --no-launch-browser
 #Create a lake
 #echo "****** TC01-Create an environment, successfully. ******"
 gcloud alpha dataplex lakes create "${LAKENAME}" --project="${TEST_PROJECT}" --location="${TEST_LOCATION}" ;
