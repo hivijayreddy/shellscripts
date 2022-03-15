@@ -4,7 +4,9 @@
 gcloud auth list
 gcloud config set account 'vijayabh@google.com'
 gcloud init
-gcloud auth login --no-browser
+#gcloud auth login --no-browser
+gcloud config configurations activate default
+1
 
 #Environment
 STAGING=https://staging-dataplex.sandbox.googleapis.com/
