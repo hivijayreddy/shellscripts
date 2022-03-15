@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#login
+gcloud auth list
+gcloud config set account 'vijayabh@google.com'
+gcloud init
+gcloud auth login --no-launch-browser
+
 #Environment
 STAGING=https://staging-dataplex.sandbox.googleapis.com/
 PRODUCTION=https://dataplex.googleapis.com/
@@ -158,9 +164,6 @@ function Resultprint() {
   echo "| No of test cases Failed: ${failcount}  |"
   echo "==============================="
 }
-
-#login
-gcloud auth login --no-launch-browser
 
 #Define Environment
 echo "Executing on ${TEST_ENVIRONMENT}" ;
