@@ -16,6 +16,6 @@ jobs:
     - name: Run script file
       run: |
         echo ${GITHUB_WORKSPACE}
-         chmod +x //E2E_TestCases.sh
-         //E2E_TestCases.sh
+         chmod +x ${GITHUB_WORKSPACE}/E2E_TestCases.sh
+         ${GITHUB_WORKSPACE}/E2E_TestCases.sh
       shell: bash
