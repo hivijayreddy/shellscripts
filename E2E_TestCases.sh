@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#login
-gcloud auth list
-gcloud config set account 'vijayabh@google.com'
-gcloud config configurations activate default
-gcloud projects list
-gcloud config set project dataplex-cdf
+# login
+# gcloud auth list
+# gcloud config set account 'vijayabh@google.com'
+# gcloud config configurations activate default
+# gcloud projects list
+# gcloud config set project dataplex-cdf
 gcloud auth application-default login
 
 #Environment
