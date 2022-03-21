@@ -7,7 +7,8 @@
 # gcloud projects list
 # gcloud config set project dataplex-cdf
 # gcloud auth application-default login
-gcloud init --no-browser
+gcloud init
+gcloud init --console-only
 
 #Environment
 STAGING=https://staging-dataplex.sandbox.googleapis.com/
